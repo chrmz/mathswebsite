@@ -1,0 +1,392 @@
+h1{
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgb(0, 47, 255);
+}
+
+
+span{
+    font-size: .9rem;
+    color: darkgrey;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+nav + * {
+    padding-top: 100px !important;
+}
+
+nav img{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: justify;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+nav .navigation ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(20, 23, 220);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    align-items: center;
+    text-align: center;
+
+}
+
+nav .navigation ul li a i{
+    font-size: 25px;
+}
+
+nav .navigation ul li a:hover{
+    color: darkorange;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    margin-left: 0;
+}
+  
+ul li ul.dropdown{
+    width: 200%;
+    background: #7188c9;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+    left: -50px;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+ul li ul.dropdown2 li{
+    display: block;
+    margin-left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+ul li ul.dropdown2{
+    width: 250%;
+    background: #7188c9;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+    left: -40px;
+}
+
+ul li:hover ul.dropdown2{
+    display: block;
+}
+
+ul li ul.dropdown3 li{
+    display: block;
+    margin-left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+ul li ul.dropdown3{
+    width: 400%;
+    background: #7188c9;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+    left: -50px;
+}
+
+ul li:hover ul.dropdown3{
+    display: block;
+}
+
+
+/* Home*/
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("../images/numberwall.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: #fff;
+    background: rgb(20, 23, 220);
+    transition: 0.3s ease;
+
+}
+
+#home a.blue:hover{
+    color: rgb(20, 23, 220);
+    background: #fff;
+
+}
+
+#home a.red{
+    color: #fff;
+    background: rgb(235, 3, 3);
+    transition: 0.3s ease;
+
+}
+
+#home a.red:hover{
+    color: rgb(0, 17, 255);
+    background: #fff;
+
+}
+
+/*Subjects*/
+
+#subjects{
+    background-color: rgb(148, 153, 182);
+    padding: 8vw 4vw 0 4vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#subjects .container{
+    background-color: rgb(66, 66, 66);
+    padding: 20px 0;
+    line-height: 1.0;
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+
+#subjects .fea-base{
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-gap: 5rem;
+     margin-top: 40px;
+     padding: 20px;
+}
+
+#subjects .fea-box{
+    text-align: center;
+    background-color: rgba(101, 99, 199, 0.781); 
+    border: rgb(255, 0, 0);
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+
+#subjects .fea-box:hover{
+    background: #1542bd;
+}
+
+
+
+#subjects .fea-box img{
+    width: 200px;
+    height: 150px;
+    align-items: center;
+}
+
+#subjects .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(36, 36, 116);
+    padding: 13px 0 7px 0;
+}
+
+
+
+
+/*Features*/
+#features{
+    background-color: rgb(148, 153, 182);
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    margin-top: 40px;
+}
+
+#features .fea-box{
+    background-color: rgba(214, 211, 211, 0.781);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#features .fea-box img{
+    width: 300px;
+    height: 200px;
+    align-items: center;
+}
+
+#features.fea-box i{
+    font-size: 1.2rem;
+    color: rgb(34, 34, 138);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(36, 36, 116);
+    padding: 13px 0 7px 0;
+    }
+
+#features .fea-box:hover{
+    background: #1542bd;
+}
+
+
+    /*Footer*/
+footer{
+    background-color: rgb(92, 92, 92);
+    padding: 100px 0;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+footer .container{
+    max-width: 1170px;
+    background-color: rgb(59, 56, 56);
+    margin: auto;
+
+}
+
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .ul{
+    list-style: none;
+    padding: 70px 0;
+}
+
+footer .footer-col{
+    width: 21.5%;
+    padding: 0 20px;
+}
+
+footer .footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    position: relative;
+}
+
+footer .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+footer .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+footer .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: 0.3s ease;
+}
+
+footer .footer-col ul li a:hover{
+    color: rgb(163, 115, 42);
+    padding-left: 10px;
+}
